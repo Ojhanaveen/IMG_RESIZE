@@ -1,0 +1,34 @@
+/* Base styles for mobile-first design */
+body {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+/* Larger screens (tablets and above) */
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+/* Desktop screens */
+@media (min-width: 1024px) {
+    body {
+        font-size: 18px;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+}
